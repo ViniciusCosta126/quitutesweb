@@ -38,7 +38,11 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.color.light};
   cursor: pointer;
 `;
-export const Nav = styled.nav`
+
+interface NavProps {
+  visible:boolean
+}
+export const Nav = styled.nav<NavProps>`
   position: absolute;
   height: 100vh;
   background-color: ${({ theme }) => theme.color.primary.main};
