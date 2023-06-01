@@ -4,7 +4,7 @@ import * as C from "./style";
 import { Mail, Key } from "lucide-react";
 import { FaGoogle, FaFacebook, FaTwitter } from "react-icons/fa";
 import { signIn } from "next-auth/react";
-const Loguin = () => {
+export default function Loguin() {
   return (
     <>
       <Head>
@@ -46,6 +46,4 @@ const Loguin = () => {
       </C.Container>
     </>
   );
-};
-
-export default Loguin;
+}
