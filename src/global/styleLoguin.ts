@@ -33,7 +33,6 @@ export const FormContainer = styled.form`
     color: ${({ theme }) => theme.color.light};
     cursor: pointer;
   }
- 
 `;
 export const FieldContainer = styled.div`
   margin-bottom: 1.5rem;
@@ -78,16 +77,16 @@ export const BtnSubmit = styled.button`
 `;
 
 export const SocialContainer = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 
-svg{
+  svg {
     margin-right: 24px;
     cursor: pointer;
-    &:last-child{
-        margin-right: 0;
+    &:last-child {
+      margin-right: 0;
     }
-}
+  }
 `;

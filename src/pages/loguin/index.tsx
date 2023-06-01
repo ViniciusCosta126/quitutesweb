@@ -1,9 +1,10 @@
 import Head from "next/head";
 import Container from "../../components/Container";
-import * as C from "./style";
+import * as C from "../../global/styleLoguin";
 import { Mail, Key } from "lucide-react";
 import { FaGoogle, FaFacebook, FaTwitter } from "react-icons/fa";
 import { signIn } from "next-auth/react";
+
 export default function Loguin() {
   return (
     <>
