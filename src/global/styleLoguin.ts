@@ -40,7 +40,7 @@ export const FieldContainer = styled.div`
     margin-bottom: 0;
   }
 `;
-export const Label = styled.label`
+export const LabelItem = styled.label`
   color: ${({ theme }) => theme.color.light};
   font-weight: 500;
   font-size: 22px;
@@ -50,7 +50,7 @@ export const Label = styled.label`
     margin-right: 8px;
   }
 `;
-export const Input = styled.input`
+export const InputItem = styled.input`
   width: 100%;
   border: 2px solid #fff;
   border-radius: 8px;

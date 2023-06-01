@@ -15,18 +15,18 @@ export default function Loguin() {
         <Container>
           <C.FormContainer>
             <C.FieldContainer>
-              <C.Label>
+              <C.LabelItem>
                 <Mail />
                 Email
-              </C.Label>
-              <C.Input type="email" placeholder="example@1235.com" />
+              </C.LabelItem>
+              <C.InputItem type="email" placeholder="example@1235.com" />
             </C.FieldContainer>
             <C.FieldContainer>
-              <C.Label>
+              <C.LabelItem>
                 <Key />
                 Senha
-              </C.Label>
-              <C.Input type="password" placeholder="*****" />
+              </C.LabelItem>
+              <C.InputItem type="password" placeholder="*****" />
             </C.FieldContainer>
             <a href="">Esqueceu a senha?</a>
             <C.BtnSubmit type="submit">Log in</C.BtnSubmit>
