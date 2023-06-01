@@ -1,8 +1,9 @@
 import { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import Hero from '../components/Hero'
+import { useSession, signIn, signOut,getSession } from 'next-auth/react';
 
-export default function Home({data}) {
+export default function Home({user}) {
   return (
     <>
       <Head>
@@ -18,12 +19,3 @@ export default function Home({data}) {
   )
 }
 
-export const getServerSideProps : GetServerSideProps = async ()=>{
-  const res = await fetch("https://fakestoreapi.com/products?limit=5")
-  const data = await res.json()
-  return { 
-    props:{
-      data
-    }
-  }
-}

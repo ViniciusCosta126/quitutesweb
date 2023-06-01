@@ -21,9 +21,10 @@ export const NavBar = styled.header`
 `;
 export const Title = styled.h1`
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   max-width: 140px;
   letter-spacing: 0.05em;
+  line-height: 1;
   color: ${({ theme }) => theme.color.light};
   text-align: center;
   @media (min-width: 1024px) {
@@ -32,7 +33,7 @@ export const Title = styled.h1`
   }
 
 `;
-export const Button = styled.button`
+export const ButtonMenu= styled.button`
   background-color: transparent;
   border: none;
   color: ${({ theme }) => theme.color.light};
@@ -106,12 +107,16 @@ export const ContainerBtns = styled.div`
       font-size: 14px;
       color: ${({ theme }) => theme.color.light};
       font-weight: 500;
+      text-transform: capitalize;
     }
-    svg {
+    svg,img  {
       margin-right: 4px;
-      width: 28px;
-      height: 28px;
+      width: 32px;
+      height: 32px;
       display: block;
+    }
+    img{
+      border-radius: 50%;
     }
   }
 `;
