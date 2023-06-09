@@ -3,7 +3,8 @@ import Container from "../../components/Container";
 import * as C from "../../global/styleLoguin";
 import { Mail, Key } from "lucide-react";
 import { FaGoogle, FaFacebook, FaTwitter } from "react-icons/fa";
-import { signIn } from "next-auth/react";
+import { signIn,getSession } from "next-auth/react";
+import { GetServerSideProps } from "next";
 
 export default function Loguin() {
   return (
@@ -47,4 +48,19 @@ export default function Loguin() {
       </C.Container>
     </>
   );
+}
+
+export const getServerSideProps : GetServerSideProps = async (req)=>{
+  const session = await getSession(req)
+  if(session.user){
+    return{
+      redirect:{
+        destination:"/",
+        permanent:false
+      }
+    }
+  }
+  return{
+    props:{}
+  }
 }
