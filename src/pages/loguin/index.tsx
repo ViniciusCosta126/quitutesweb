@@ -3,7 +3,7 @@ import Container from "../../components/Container";
 import * as C from "../../global/styleLoguin";
 import { Mail, Key } from "lucide-react";
 import { FaGoogle, FaFacebook, FaTwitter } from "react-icons/fa";
-import { signIn} from "next-auth/react";
+import { signIn } from "next-auth/react";
 
 export default function Loguin() {
   return (
@@ -35,13 +35,13 @@ export default function Loguin() {
             <p>Ou</p>
           </div>
           <C.SocialContainer>
-            <FaFacebook size={30} color="#0E4791"  onClick={()=>signIn("facebook")}/>
+            <FaFacebook size={30} color="#0E4791" onClick={() => signIn("facebook")} />
             <FaGoogle
               size={30}
               color="#4086F4"
               onClick={() => signIn("google")}
             />
-            <FaTwitter size={30} color="#1DA0F1"  onClick={()=>signIn("twitter")} />
+            <FaTwitter size={30} color="#1DA0F1" onClick={() => signIn("twitter")} />
           </C.SocialContainer>
         </Container>
       </C.Container>
